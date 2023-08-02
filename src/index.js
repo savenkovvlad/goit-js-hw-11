@@ -22,6 +22,7 @@ async function onSearch(whatFound, page = 1) {
 }
 refs.loadMore.addEventListener(`click`, onClickLoadMore);
 refs.form.addEventListener('submit', onSubmitSearch);
+
 async function onSubmitSearch(e) {
   e.preventDefault();
   addHiddenAtribute(refs.error);
